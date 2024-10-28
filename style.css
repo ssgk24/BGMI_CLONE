@@ -1,0 +1,335 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body {
+  font-family: "Teko", sans-serif !important;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.navbar {
+  position: relative;
+  background-color: #000000;
+  height: 80px;
+  position: relative;
+  padding: 10px;
+}
+.logo {
+  margin-left: 15px !important;
+}
+.nav-link {
+  color: grey !important;
+  font-size: 20px !important;
+  position: relative;
+}
+.nav-item a.active {
+  color: #f2a900 !important;
+}
+.nav-link:hover {
+  color: #ffffff !important;
+}
+.fa-external-link {
+  margin-left: 3px !important;
+  font-size: 10px !important;
+  position: absolute;
+  top: 5px;
+}
+.navbar-nav > .fab {
+  display: flex !important;
+  align-items: center !important;
+}
+#ios,
+#aos {
+  width: 200px;
+  height: 80px;
+  border: none;
+  border-left: 1px solid black;
+  font-size: 23px;
+  font-weight: 600;
+  color: #333333;
+}
+#ios {
+  background-color: #eca800;
+}
+#aos {
+  background-color: #e2ad0d;
+  margin-right: 25px !important;
+}
+#ios:hover {
+  background-color: #eca900e2;
+}
+#aos:hover {
+  background-color: #e2ad0de0;
+}
+.fab:hover,
+.fa:hover {
+  color: #eca800 !important;
+}
+.nav-toggle {
+  position: absolute;
+  top: 75px;
+}
+@media (max-width: 1200px) {
+  .navbar-nav .nav-item {
+    display: none !important;
+  }
+  #ios,
+  #aos {
+    display: none !important;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-nav .fab,
+  .fa {
+    display: none !important;
+  }
+}
+.toggleb {
+  text-decoration: none;
+  display: none;
+}
+@media (max-width: 1200px) {
+  .toggleb {
+    display: inline-block !important;
+    color: #ffffff;
+  }
+  .toggleb:hover {
+    color: #f2a900;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-toggle {
+    display: none !important;
+  }
+}
+#ios1,
+#aos1 {
+  width: 100vw;
+  height: 60px;
+  border: none;
+  border-left: 1px solid black;
+  font-size: 23px;
+  font-weight: 600;
+  color: #333333;
+}
+#ios1 {
+  background-color: #eca800;
+}
+#aos1 {
+  background-color: #e2ad0d;
+}
+#ios1:hover {
+  background-color: #eca900e2;
+}
+#aos1:hover {
+  background-color: #e2ad0de0;
+}
+.nav-toggle .nav-link {
+  background-color: #000000;
+  border-bottom: 1px solid grey;
+  padding: 2%;
+}
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(assets/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.head {
+  margin-left: 50px !important;
+  padding: 15px !important;
+}
+.h1-head,
+.h1-head2 {
+  font-size: 100px !important;
+  font-weight: 900 !important;
+}
+.head {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.ucbtn {
+  width: 400px;
+  font-size: 45px !important;
+  color: #333333 !important;
+}
+.section-heartbeat {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(assets/videot_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.heartbeat-title {
+  font-size: 4vw; /* Scales with viewport */
+  margin: 0.5rem 0;
+  color: #333333;
+  flex-grow: 0; /* Title doesn’t grow, letting iframe take available space */
+  flex-shrink: 1; /* Allows the title to shrink when space is limited */
+  text-align: center;
+}
+
+.iframe-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.iframe-container iframe {
+  width: 70%;
+  height: 90%;
+  border: 0;
+}
+.news-sect {
+  width: 100vw;
+  height: auto;
+  background-image: url(assets/news_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 992px) {
+  .news-sect {
+    height: auto !important;
+  }
+}
+.card {
+  width: 85%;
+  height: auto;
+  margin: auto !important;
+  margin-bottom: 2rem !important;
+}
+
+.card-body .card-title,
+p {
+  margin-left: 10px !important;
+}
+.card-body p {
+  color: rgba(128, 128, 128, 0.92) !important;
+}
+.view {
+  width: 100px !important;
+  height: 30px;
+  border: none;
+}
+#newsButton {
+  width: 100px !important;
+  height: 30px;
+  border: none;
+  text-decoration: none !important;
+}
+#newsButton:hover {
+  color: #333333 !important;
+  background-color: #f2a900 !important;
+}
+.partner {
+  background-image: url(assets/video_bg.jpg);
+  width: 100vw;
+  height: 60vh;
+}
+.partner h1 {
+  color: white;
+  font-size: 70px;
+}
+.owl-carousel .item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* or whatever size you prefer */
+  margin: 5px 5px !important;
+}
+.partner .item {
+  padding: 5px; /* Reduced from 10px to 5px */
+}
+
+.partner .item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: If you want the images to be closer to the section edges */
+.partner {
+  padding: 10px 0;
+}
+
+/* Optional: If you want to remove the arrows' offset */
+.owl-nav button.owl-prev {
+  left: 0;
+  font-size: 30px !important;
+  color: white !important;
+}
+
+.owl-nav button.owl-next {
+  right: 0;
+  font-size: 30px !important;
+  color: white !important;
+}
+.pan {
+  background-image: url(assets/video_bg.jpg);
+  width: 100vw;
+  height: 60vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.pan-in {
+  background-image: url(assets/app_bg.jpg);
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container {
+  width: 100vw;
+  height: 20vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container img {
+  width: 150px;
+  height: 25px;
+  margin-bottom: 5px !important;
+}
+.footer-container p {
+  color: grey;
+}
+.last-list a {
+  text-decoration: none;
+  color: grey;
+  list-style-type: none;
+  display: inline-block;
+}
+.last-list li {
+  margin-right: 5px !important;
+}
+.last-list a:hover {
+  color: white;
+}
+#backToTop:hover {
+  cursor: pointer;
+}
+.bg_dive {
+  width: 100vw;
+  height: 180vh;
+  background: url(assets/bg_redeem.jpg) no-repeat;
+  background-size: cover;
+}
